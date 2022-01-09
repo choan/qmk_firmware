@@ -147,7 +147,7 @@ available.
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
 | CAPS  | LEFT  | DOWN  | UP    | RGHT  |
 | INS   | HOME  | PGDN  | PGUP  | END   |
-| ENT   | BSPC  | DEL   | U_NP  | U_NP  |
+| PENT  | BSPC  | DEL   | U_NP  | U_NP  |
 
 
 **** Mouse
@@ -354,7 +354,7 @@ Not available with ~MIRYOKU_LAYERS=FLIP~.
 | U_RDO | U_PST | U_CPY | U_CUT | U_UND |
 | LEFT  | DOWN  | UP    | RGHT  | CAPS  |
 | HOME  | PGDN  | PGUP  | END   | INS   |
-| ENT   | BSPC  | DEL   | U_NP  | U_NP  |
+| PENT  | BSPC  | DEL   | U_NP  | U_NP  |
 
 
 ******* Mouse
@@ -389,7 +389,7 @@ building.  Only available with ~MIRYOKU_LAYERS=FLIP~.
 | PGUP  | HOME  | UP    | END   | INS   |
 | PGDN  | LEFT  | DOWN  | RGHT  | CAPS  |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO |
-| U_NP  | U_NP  | DEL   | BSPC  | ENT   |
+| U_NP  | U_NP  | DEL   | BSPC  | PENT  |
 
 
 ******* Mouse
@@ -500,7 +500,7 @@ To select, append ~MIRYOKU_LAYERS=FLIP~ to the ~make~ command line when building
 | HOME  | PGDN  | PGUP  | END   | INS   |
 | LEFT  | DOWN  | UP    | RGHT  | CAPS  |
 | U_UND | U_CUT | U_CPY | U_PST | U_RDO |
-| U_NP  | U_NP  | DEL   | BSPC  | ENT   |
+| U_NP  | U_NP  | DEL   | BSPC  | PENT  |
 
 
 ******* Mouse
