@@ -218,10 +218,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     U_NP,    U_NP,    KC_DOT,  KC_0,    KC_MINS, U_NA,    U_NA,    U_NA,    U_NP,    U_NP
   ),
   [SYM] = LAYOUT_miryoku(
-    KC_LCBR, KC_AMPR, KC_ASTR, KC_LPRN, KC_RCBR, U_NA,    U_NA,    U_NA,    U_NA,    RESET,
-    KC_COLN, KC_DLR,  KC_PERC, KC_CIRC, KC_PLUS, U_NA,    KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI,
-    KC_TILD, KC_EXLM, KC_AT,   KC_HASH, KC_PIPE, U_NA,    U_NA,    U_NA,    KC_ALGR, U_NA,
-    U_NP,    U_NP,    KC_LPRN, KC_RPRN, KC_UNDS, U_NA,    U_NA,    U_NA,    U_NP,    U_NP
+	  KC_DQUO, KC_PLUS, KC_EQL,  KC_PERC, KC_HASH, KC_QUES, KC_RBRC, KC_LBRC, KC_AMPR, KC_PIPE,
+	  KC_AT,   KC_SLSH, KC_LPRN, KC_RPRN, KC_GRV,  KC_MINS, KC_RCBR, KC_LCBR, KC_BSLS, KC_SCLN,
+	  KC_CIRC, KC_ASTR, KC_DLR,  KC_EXLM, KC_PIPE, KC_TILD, KC_UNDS, KC_TRNS, KC_TRNS, KC_TRNS,
+	  U_NP,    U_NP,    KC_LPRN, KC_RPRN, KC_UNDS, U_NA,    U_NA,    U_NA,    U_NP,    U_NP
   ),
   [FUN] = LAYOUT_miryoku(
     KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR, U_NA,    U_NA,    U_NA,    U_NA,    RESET,
