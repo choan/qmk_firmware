@@ -35,8 +35,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	[_NUM]  = LAYOUT(
 	    RESET,   KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_LBRC, KC_7,    KC_8,    KC_9,    KC_RBRC,
 		KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO,    KC_EQL,  KC_4,    KC_5,    KC_6,    KC_SCLN,
-		KC_NO,    KC_ALGR, KC_NO,    KC_NO,    KC_NO, KC_NO, KC_NO, KC_BSLS, KC_1,    KC_2,    KC_3,    KC_GRV,
-		KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,  KC_NO,  KC_PENT, KC_0,    KC_DOT,  KC_NO,    KC_NO , KC_NO
+		DF(_NUM),    KC_ALGR, KC_NO,    KC_NO,    KC_NO, KC_NO, KC_NO, KC_BSLS, KC_1,    KC_2,    KC_3,    KC_GRV,
+		KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO, DF(_BASE),  KC_PENT, KC_0,    KC_DOT,  KC_NO,    KC_NO , KC_NO
 		),
 	[_MOUSE] = LAYOUT(
 		    RESET,   KC_NO,    KC_NO,    KC_NO,    KC_NO,    U_RDO,   U_PST,   U_CPY,   U_CUT,   U_UND,
