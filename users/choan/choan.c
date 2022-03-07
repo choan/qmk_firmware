@@ -8,7 +8,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		KC_NO,  KC_NO,  KC_NO,  MOU_NIL, NAV_SPC, NUM_TAB, KC_ENT, SYM_BCK, FUN_DEL, KC_VOLD, KC_VOLU, KC_MUTE
 	),
 	[_NAV]  = LAYOUT(
-		RESET,   KC_NO,    MY_EMAIL,    KC_NO,    KC_NO,             U_RDO,    U_PST,   U_CPY,   U_CUT,   U_UND,
+		RESET,   KC_NO,    KC_NO,    KC_NO,    KC_NO,             U_RDO,    U_PST,   U_CPY,   U_CUT,   U_UND,
 		KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_HYPR,    KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_CAPS,
 		KC_NO,    KC_ALGR, KC_NO,    KC_NO,    KC_NO,     KC_NO, KC_NO,  KC_HOME, KC_PGDN, KC_PGUP, KC_END,  KC_INS,
 		KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO, KC_ENT,  KC_BSPC, KC_DEL, KC_MPRV, KC_MPLY, KC_MNXT
