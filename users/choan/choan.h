@@ -13,6 +13,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #pragma once
 #include QMK_KEYBOARD_H
 
+
 enum layer_names {
 	_BASE,
 	_NAV,
@@ -22,17 +23,6 @@ enum layer_names {
 	_FUN,
 	_MEDIA
 };
-
-// reduce default
-#undef TAPPING_TERM
-#define TAPPING_TERM 200
-
-// prevent normal rollover on alphas from accidentally triggering mods.
-#define IGNORE_MOD_TAP_INTERRUPT
-#define PERMISSIVE_HOLD
-
-// enable rapid switch from tap to hold, disables double tap hold auto-repeat.
-#define TAPPING_FORCE_HOLD
 
 // layer keys
 #define MOU_NIL LT(_MOUSE, KC_NO)
@@ -65,18 +55,3 @@ enum layer_names {
 #define U_CPY KC_COPY
 #define U_CUT KC_CUT
 #define U_UND KC_UNDO
-
-// Recommended for heavy chording.
-#define QMK_KEYS_PER_SCAN 4
-
-// mouse key speed and acceleration.
-#undef MOUSEKEY_DELAY
-#define MOUSEKEY_DELAY          0
-#undef MOUSEKEY_INTERVAL
-#define MOUSEKEY_INTERVAL       16
-#undef MOUSEKEY_WHEEL_DELAY
-#define MOUSEKEY_WHEEL_DELAY    0
-#undef MOUSEKEY_MAX_SPEED
-#define MOUSEKEY_MAX_SPEED      6
-#undef MOUSEKEY_TIME_TO_MAX
-#define MOUSEKEY_TIME_TO_MAX    64
