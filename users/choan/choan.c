@@ -43,6 +43,12 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 			KC_LGUI, KC_LALT, KC_LCTL, KC_LSFT, KC_NO,    KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R, KC_NO,
 			KC_NO,    KC_ALGR, KC_NO,    KC_NO,    KC_NO, KC_NO, KC_NO,   KC_WH_L, KC_WH_D, KC_WH_U, KC_WH_R, KC_NO,
 			KC_NO, KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_BTN1, KC_BTN3, KC_BTN2, KC_NO,    KC_NO , KC_NO
-
+		),
+	[_FUN] = LAYOUT(
+		KC_F12,  KC_F7,   KC_F8,   KC_F9,   KC_PSCR,                    KC_NO,    KC_NO,    KC_NO,    KC_NO,   RESET,
+		KC_F11,  KC_F4,   KC_F5,   KC_F6,   KC_SLCK,                    KC_NO,    KC_LSFT,  KC_LCTL,  KC_LALT, KC_LGUI,
+		KC_F10,  KC_F1,   KC_F2,   KC_F3,   KC_PAUS, KC_NO,   KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_ALGR, KC_NO,
+		KC_NO,   KC_NO,   KC_NO,   KC_APP,  KC_SPC,  KC_TAB,  KC_NO,    KC_NO,    KC_NO,    KC_NO,    KC_NO,   KC_NO
 		)
+
 };
