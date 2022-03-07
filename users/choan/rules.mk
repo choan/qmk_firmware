@@ -1,8 +1,6 @@
-SRC += choan.c
+TAP_DANCE_ENABLE = yes
 
-ifeq ($(strip $(TAP_DANCE_ENABLE)), yes)
-    SRC += tapdances.c
-endif
+SRC += choan.c
 
 ifeq ($(strip $(COMBO_ENABLE)), yes)
     SRC += combos.c
