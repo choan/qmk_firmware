@@ -16,10 +16,10 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 enum layer_names {
 	_BASE,
+	_NUM,
 	_NAV,
 	_MOUSE,
 	_SYM,
-	_NUM,
 	_FUN,
 	_MEDIA
 };
