@@ -37,17 +37,19 @@ enum layer_names {
 #define HOME_A LGUI_T(KC_A)
 #define HOME_S LALT_T(KC_S)
 #define HOME_D LCTL_T(KC_D)
-#define HOME_F LSFT_T(KC_F)
+#define HOME_F LT(_NUM, KC_F)
 #define HOME_G HYPR_T(KC_G)
+#define SHF_Z  LSFT_T(KC_Z)
 #define DOT_ALTGR RALT_T(KC_DOT)
 
 // right hand home row mods
 #define HOME_QUO RGUI_T(KC_QUOTE)
 #define HOME_L   LALT_T(KC_L)
 #define HOME_K   RCTL_T(KC_K)
-#define HOME_J   RSFT_T(KC_J)
-#define HOME_H   HYPR_T(KC_H)
-#define X_ALTGR   RALT_T(KC_X)
+#define HOME_J   HYPR_T(KC_J)
+#define HOME_H   KC_H
+#define SHF_SL   RSFT_T(KC_SLASH)
+#define X_ALTGR  RALT_T(KC_X)
 
 // copy/paste
 #define U_RDO KC_AGIN
