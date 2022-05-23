@@ -26,6 +26,7 @@ enum layer_names {
 
 // layer keys
 #define MOU_NIL LT(_MOUSE, KC_NO)
+#define MOU_ESC LT(_MOUSE, KC_ESC)
 #define NAV_SPC LT(_NAV, KC_SPACE)
 #define NUM_TAB LT(_NUM, KC_TAB)
 
@@ -37,7 +38,7 @@ enum layer_names {
 #define HOME_A LGUI_T(KC_A)
 #define HOME_S LALT_T(KC_S)
 #define HOME_D LCTL_T(KC_D)
-#define HOME_F LT(_NUM, KC_F)
+#define HOME_F LSFT_T(KC_F)
 #define HOME_G KC_G
 #define SHF_V  LSFT_T(KC_V)
 #define HYPR_W HYPR_T(KC_W)
@@ -47,8 +48,9 @@ enum layer_names {
 #define HOME_QUO RGUI_T(KC_QUOTE)
 #define HOME_L   LALT_T(KC_L)
 #define HOME_K   RCTL_T(KC_K)
-#define HOME_J   HYPR_T(KC_J)
+#define HOME_J   RSFT_T(KC_J)
 #define HOME_H   KC_H
+#define HYPR_O   HYPR_T(KC_O)
 #define SHF_M    RSFT_T(KC_M)
 #define X_ALTGR  RALT_T(KC_X)
 
