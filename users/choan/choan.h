@@ -20,6 +20,7 @@ enum layer_names {
 	_NAV,
 	_MOUSE,
 	_SYM,
+	_INT,
 	_FUN,
 	_MEDIA
 };
@@ -30,7 +31,8 @@ enum layer_names {
 #define NAV_SPC LT(_NAV, KC_SPACE)
 #define NUM_TAB LT(_NUM, KC_TAB)
 
-#define MED_ENT LT(_MEDIA, KC_ENTER)
+#define MED_ENT LT(_MEDIA, KC_ENTER) // unused
+#define INT_ENT LT(_INT, KC_ENTER)
 #define SYM_BCK LT(_SYM, KC_BACKSPACE)
 #define FUN_DEL LT(_FUN, KC_DELETE)
 
@@ -60,3 +62,10 @@ enum layer_names {
 #define U_CPY KC_COPY
 #define U_CUT KC_CUT
 #define U_UND KC_UNDO
+
+
+// international and strings
+#define QUES_OP ALGR(KC_QUES)
+#define EXCL_OP ALGR(KC_1)
+#define DEAD_GR ALGR(KC_GRV)
+#define DEAD_TL ALGR(KC_N)
