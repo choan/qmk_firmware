@@ -17,7 +17,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     case EQEQ:
         if (record->event.pressed) {
             // when keycode QMKBEST is pressed
-            SEND_STRING("==");
+            SEND_STRING(" == ");
         }
         break;
     case PLPL:
@@ -37,7 +37,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         break;
     case DBARR:
         if (record->event.pressed) {
-            SEND_STRING("=>");
+            SEND_STRING(" => ");
         }
         break;
     case EMAIL:
