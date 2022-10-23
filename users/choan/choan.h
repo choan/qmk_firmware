@@ -30,11 +30,13 @@ enum layer_names {
 #define MOU_ESC LT(_MOUSE, KC_ESC)
 #define NAV_SPC LT(_NAV, KC_SPACE)
 #define NUM_TAB LT(_NUM, KC_TAB)
+#define NUM_V LT(_NUM, KC_V)
 
 #define MED_ENT LT(_MEDIA, KC_ENTER) // unused
 #define INT_ENT LT(_INT, KC_ENTER)
 #define SYM_BCK LT(_SYM, KC_BACKSPACE)
 #define FUN_DEL LT(_FUN, KC_DELETE)
+#define FUN_M LT(_FUN, KC_M)
 
 // left hand home row mods
 #define HOME_A LGUI_T(KC_A)
