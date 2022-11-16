@@ -82,14 +82,20 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ),
     [_SYM]  = LAYOUT(
         KC_TILD, KC_PLUS, KC_EQL,  KC_PERC, KC_HASH,                  KC_QUES, KC_RBRC, KC_LBRC, KC_AMPR, KC_CIRC,
-        KC_SCLN, KC_SLSH, KC_LPRN, KC_RPRN, KC_GRV,                   KC_NO,   KC_RCBR, KC_LCBR, KC_BSLS, KC_AT,
-        KC_COLN, KC_ASTR, KC_DLR,  KC_EXLM, KC_PIPE, KC_NO,   KC_NO,  KC_NO,   KC_UNDS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_SCLN, KC_SLSH, KC_LPRN, KC_RPRN, KC_GRV,                   MINMIN,  SYMALT,  KC_LCTL, KC_LALT, KC_AT,
+        KC_COLN, KC_ASTR, KC_DLR,  KC_EXLM, KC_PIPE, KC_NO,   KC_NO,  KC_NO,   KC_UNDS, _______, _______, _______,
         KC_NO,   KC_NO,   KC_NO,   KC_ESC,  KC_MINS, KC_UNDS, KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO
+        ),
+    [_SYMALT]  = LAYOUT(
+        DEAD_TL, PLPL,    EQEQ,    DBARR,   THIS,                     QUES_OP, KC_RBRC, KC_LBRC, KC_AMPR, KC_CIRC,
+        KC_COLN, KC_BSLS, KC_LCBR, KC_RCBR, DEAD_GR,                  KC_NO,   _______, _______, _______, EMAIL,
+        _______, ARROW,   _______, EXCL_OP, _______, KC_NO,   KC_NO,  KC_NO,   _______, _______, _______, _______,
+        KC_NO,   KC_NO,   KC_NO,   _______, KC_UNDS, _______, KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO
         ),
     [_INT]  = LAYOUT(
         DEAD_TL, PLPL,    EQEQ,   KC_PERC, THIS,                  QUES_OP, KC_RBRC, KC_LBRC, KC_AMPR, KC_CIRC,
         KC_SCLN, KC_SLSH, DBARR,  ARROW, DEAD_GR,                  KC_NO,   KC_RCBR, KC_LCBR, KC_BSLS,   EMAIL,
-        KC_COLN, KC_ASTR, KC_DLR, EXCL_OP, KC_PIPE, KC_NO,   KC_NO,  KC_NO,   KC_UNDS, KC_TRNS, KC_TRNS, KC_TRNS,
+        KC_COLN, KC_ASTR, KC_DLR, EXCL_OP, KC_PIPE, KC_NO,   KC_NO,  KC_NO,   KC_UNDS, _______, _______, _______,
         KC_NO,   KC_NO,   KC_NO,  KC_ESC,  MINMIN,  KC_UNDS, KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO
         ),
     [_NUM]  = LAYOUT(

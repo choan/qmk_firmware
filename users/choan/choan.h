@@ -20,6 +20,7 @@ enum layer_names {
 	_NAV,
 	_MOUSE,
 	_SYM,
+	_SYMALT,
 	_INT,
 	_FUN,
 	_MEDIA
@@ -31,6 +32,7 @@ enum layer_names {
 #define NAV_SPC LT(_NAV, KC_SPACE)
 #define NUM_TAB LT(_NUM, KC_TAB)
 #define NUM_V LT(_NUM, KC_V)
+#define SYMALT MO(_SYMALT)
 
 #define MED_ENT LT(_MEDIA, KC_ENTER) // unused
 #define INT_ENT LT(_INT, KC_ENTER)
