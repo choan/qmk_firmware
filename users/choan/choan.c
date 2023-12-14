@@ -3,20 +3,22 @@
 enum custom_keycodes {
     EQEQ = SAFE_RANGE,
     PLPL,
-	MINMIN,
-	ARROW,
-	DBARR,
-	EMAIL,
-	THIS,
+    MINMIN,
+    ARROW,
+    DBARR,
+    EMAIL,
+    THIS,
     EQGT,
-	DSGT,
+    DSGT,
+    OROR,
+    ANDAND,
+    PHPST,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
     case EQEQ:
         if (record->event.pressed) {
-            // when keycode QMKBEST is pressed
             SEND_STRING(" == ");
         }
         break;
@@ -50,7 +52,22 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             SEND_STRING("$this");
         }
         break;
-	}
+    case OROR:
+        if (record->event.pressed) {
+            SEND_STRING(" || ");
+        }
+        break;
+    case ANDAND:
+        if (record->event.pressed) {
+            SEND_STRING(" && ");
+        }
+        break;
+    case PHPST:
+        if (record->event.pressed) {
+            SEND_STRING("<?php");
+        }
+        break;
+    }
     return true;
 };
 
