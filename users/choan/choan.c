@@ -110,8 +110,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,   KC_NO,   KC_NO,   _______, KC_UNDS, _______, KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO
         ),
     [_INT]  = LAYOUT(
-        DEAD_TL, PLPL,    EQEQ,   KC_PERC, THIS,                  QUES_OP, KC_RBRC, KC_LBRC, KC_AMPR, KC_CIRC,
-        KC_SCLN, KC_SLSH, DBARR,  ARROW, DEAD_GR,                  KC_NO,   KC_RCBR, KC_LCBR, KC_BSLS,   EMAIL,
+        DEAD_TL, PLPL,    EQEQ,  KC_PERC, THIS,                      QUES_OP, KC_RBRC, KC_LBRC, KC_AMPR, KC_CIRC,
+        KC_SCLN, KC_SLSH, DBARR, ARROW,   DEAD_GR,                   KC_NO,   KC_RCBR, KC_LCBR, KC_BSLS, EMAIL,
         KC_COLN, KC_ASTR, KC_DLR, EXCL_OP, KC_PIPE, KC_NO,   KC_NO,  KC_NO,   KC_UNDS, _______, _______, _______,
         KC_NO,   KC_NO,   KC_NO,  KC_ESC,  MINMIN,  KC_UNDS, KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO
         ),
