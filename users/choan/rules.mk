@@ -1,5 +1,6 @@
 TAP_DANCE_ENABLE = yes
 CAPS_WORD_ENABLE = yes
+COMBO_ENABLE = yes
 
 # SRC += choan.c
 INTROSPECTION_KEYMAP_C = choan.c # keymaps
