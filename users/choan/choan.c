@@ -3,20 +3,22 @@
 enum custom_keycodes {
     EQEQ = SAFE_RANGE,
     PLPL,
-	MINMIN,
-	ARROW,
-	DBARR,
-	EMAIL,
-	THIS,
+    MINMIN,
+    ARROW,
+    DBARR,
+    EMAIL,
+    THIS,
     EQGT,
-	DSGT,
+    DSGT,
+    OROR,
+    ANDAND,
+    PHPST,
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
     case EQEQ:
         if (record->event.pressed) {
-            // when keycode QMKBEST is pressed
             SEND_STRING(" == ");
         }
         break;
@@ -50,7 +52,22 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             SEND_STRING("$this");
         }
         break;
-	}
+    case OROR:
+        if (record->event.pressed) {
+            SEND_STRING(" || ");
+        }
+        break;
+    case ANDAND:
+        if (record->event.pressed) {
+            SEND_STRING(" && ");
+        }
+        break;
+    case PHPST:
+        if (record->event.pressed) {
+            SEND_STRING("<?php");
+        }
+        break;
+    }
     return true;
 };
 
@@ -95,8 +112,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         KC_NO,   KC_NO,   KC_NO,   _______, KC_UNDS, _______, KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO
         ),
     [_INT]  = LAYOUT(
-        DEAD_TL, PLPL,    EQEQ,   KC_PERC, THIS,                  QUES_OP, KC_RBRC, KC_LBRC, KC_AMPR, KC_CIRC,
-        KC_SCLN, KC_SLSH, DBARR,  ARROW, DEAD_GR,                  KC_NO,   KC_RCBR, KC_LCBR, KC_BSLS,   EMAIL,
+        DEAD_TL, PLPL,    EQEQ,  KC_PERC, THIS,                      QUES_OP, KC_RBRC, KC_LBRC, KC_AMPR, KC_CIRC,
+        KC_SCLN, KC_SLSH, DBARR, ARROW,   DEAD_GR,                   KC_NO,   KC_RCBR, KC_LCBR, KC_BSLS, EMAIL,
         KC_COLN, KC_ASTR, KC_DLR, EXCL_OP, KC_PIPE, KC_NO,   KC_NO,  KC_NO,   KC_UNDS, _______, _______, _______,
         KC_NO,   KC_NO,   KC_NO,  KC_ESC,  MINMIN,  KC_UNDS, KC_NO,  KC_NO,   KC_NO,   KC_NO,   KC_NO,   KC_NO
         ),
